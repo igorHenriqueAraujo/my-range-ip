@@ -1,0 +1,17 @@
+{
+  "name": "my-range-ip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Igor Henrique de Araújo",
+  "license": "ISC",
+  "bin": {
+    "rip": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^3.0.2"
+  }
+}
