@@ -17,9 +17,9 @@ rip
 Isso retornará os ranges de IP das suas interfaces de rede como no exemplo abaixo.
 
 ``` bash
-wlp2s0 192.168.0.0/256
+wlp2s0 199.199.0.1/256
 docker0 13.0.0.0/256
-tun0 172.30.36.148
+tun0 199.0.0.199
 ```
 
 Você também tem opção de retornar mais detalhes das suas interfaces de rede passando `-d` ou `--details` como argumento de execução.
@@ -35,30 +35,30 @@ O retorno será parecido com o abaixo.
 
 ``` bash
 wlp2s0: {
-  address: '192.168.0.22',
+  address: '199.199.0.1',
   netmask: '255.255.255.0',
   family: 'IPv4',
-  mac: '1c:4d:70:f4:26:d0',
+  mac: '1a:4b:80:f3:15:c1',
   internal: false,
-  cidr: '192.168.0.22/24',
-  rangeIP: '192.168.0.0/256'
+  cidr: '199.199.0.22/24',
+  rangeIP: '199.199.0.0/256'
 }
 docker0: {
   address: '13.0.0.1',
   netmask: '255.255.255.0',
   family: 'IPv4',
-  mac: '02:42:32:2c:3e:c0',
+  mac: '03:52:23:2b:2c:b1',
   internal: false,
   cidr: '13.0.0.1/24',
   rangeIP: '13.0.0.0/256'
 }
 tun0: {
-  address: '172.30.36.148',
+  address: '199.0.0.0',
   netmask: '255.255.255.255',
   family: 'IPv4',
   mac: '00:00:00:00:00:00',
   internal: false,
-  cidr: '172.30.36.148/32',
-  rangeIP: '172.30.36.148'
+  cidr: '199.0.0.0/32',
+  rangeIP: '199.0.0.0'
 }
 ```
